@@ -2,7 +2,7 @@
 
 
 ## 前置准备
-注册openrouter（https://openrouter.ai/），并使用里面提供的免费model
+注册[openrouter](https://openrouter.ai/)，并使用里面提供的免费model
 “Mistral 7B Instruct”作为ai provider，以此为基础开发聊天对话机器人。
 
 MongoDB: 这里的数据库我用的是[MongoDB Atlas](https://www.mongodb.com/atlas/database)
