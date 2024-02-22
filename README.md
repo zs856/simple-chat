@@ -1,7 +1,9 @@
 # Simple Chat
 
 
-## 前置准备
+## 🚀我所做的前置准备
+PS: 如果您只是想看API如何调用，可以直接跳过该节 👏
+
 注册[openrouter](https://openrouter.ai/)，并使用里面提供的免费model
 “Mistral 7B Instruct”作为ai provider，以此为基础开发聊天对话机器人。
 
@@ -9,7 +11,7 @@ MongoDB: 这里的数据库我用的是[MongoDB Atlas](https://www.mongodb.com/a
 
 部署服务使用[Deta Space](https://deta.space/)
 
-## 需求中提到的API
+## ⚓需求中提到的API
 ### get_ai_chat_response
 >用户输入问题，通过ai provider 返回ai 的回答
 
@@ -71,7 +73,7 @@ can I do for you!"}]
 
 ```print(response)```
 
-## 该程序中所做的扩展
+## ✈️该程序中所做的扩展
 因为FastAPI 是一个现代 Web 框架，用于在 Python 中构建 RESTful API。所以在实现上述需求的过程中，根据构建REST APIs的最佳实践，我对程序做了一些小修改。
 参考文献：
 - [Building REST APIs with Python and FastAPI](https://medium.com/@ramjoshi.blogs/building-rest-apis-with-python-and-fastapi-f0e9ae19905c)
@@ -85,7 +87,7 @@ can I do for you!"}]
 | get_user_chat_history | /user/history/{last_n} |
 | get_chat_status_today | /user/status |
 
-## 根据用户管理需求做的调整
+## 🚞根据用户管理需求做的调整
 API在进行调用前，需要先获取Bearer Token。而 Bearer Token则在用户执行登录操作或者调用 ```/token```获取。
 
 1. **对于第一次使用API的用户**，其首先需要通过调用```/user/```创建一个*User*
@@ -112,13 +114,13 @@ API在进行调用前，需要先获取Bearer Token。而 Bearer Token则在用�
 成功反馈如下：
 ![alt text](image-7.png)
 
-## 查询用户当天聊天次数
+## 🔍查询用户当天聊天次数
 这个功能我们使用```/user/status```
 ![alt text](image-8.png)
 成功反馈如下：
 ![alt text](image-9.png)
 
-## 扩展选做题
+## ⏰扩展选做题
 | API实际调用的函数名 | API URI |
 | :----: | :----: |
 | get_ai_chat_response_advanced | /llm/message/advanced |
