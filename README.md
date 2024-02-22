@@ -117,3 +117,28 @@ API在进行调用前，需要先获取Bearer Token。而 Bearer Token则在用�
 ![alt text](image-8.png)
 成功反馈如下：
 ![alt text](image-9.png)
+
+## 扩展选做题
+| API实际调用的函数名 | API URI |
+| :----: | :----: |
+| get_ai_chat_response_advanced | /llm/message/advanced |
+| get_user_behavior | /user/report |
+
+### get_ai_chat_response_advanced
+该API可通过/llm/message/advanced进行调用
+该API是get_ai_chat_response的进阶版，在用户调用该API的时候，AI的回复被设计为让其更具有人文关怀。参考文献：
+
+- [I Made a Chatbot Cry Happy](https://medium.com/@anthonyodugan/i-made-a-chatbot-cry-happy-a905aa6aad1e)
+- [Unlocking User Psychology in Large Language Models: Receptiviti Augmented Generation](https://medium.com/@receptiviti/unlocking-user-psychology-in-large-language-models-receptiviti-augmented-generation-dfcaecce6812)
+![alt text](image-10.png)
+成功反馈如下：
+![alt text](image-11.png)
+### get_user_behavior
+- 基于用户与AI 的聊天历史，分析用户的兴趣点和行为模式。
+- 通过get_user_behavior API 提供用户行为分析的摘要报告。
+- 分析报告应包括用户最常讨论的主题、活跃时间段等信息。
+该API可通过/user/report进行调用
+![alt text](image-12.png)
+成功反馈如下：
+![alt text](image-13.png)
+该报告的信息将会以Markdown语法输出
