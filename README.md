@@ -1,6 +1,9 @@
 # Simple Chat
 
-
+## ❓Simple chat是什么？
+Simple chat是一个AI 聊天机器人。
+## ❗必须用到的技术
+使用FastAPI与MongoDB搭建后端
 ## 🚀我所做的前置准备
 PS: 如果您只是想看API如何调用，可以直接跳过该节 👏
 
